@@ -2,6 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
+}
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+h3 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
 }
 main {
   min-height: 100vh;
@@ -9,6 +27,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Poppins";
 }
 .glass {
   background: #fff;
@@ -62,4 +81,81 @@ main {
 }
 .games {
   flex: 2;
+}
+.link {
+  display: flex;
+  margin: 1rem 0rem;
+  padding: 0 5rem;
+  align-items: center;
+}
+.link h2 {
+  padding: 0rem 2rem;
+}
+.pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 0.4rem;
+  margin: 0 1rem;
+}
+.pro h2 {
+  color: #fff;
+  font-weight: 700;
+}
+/* GAMES */
+.status {
+  margin-bottom: 3rem;
+}
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  outline: none;
+  border: none;
+  padding: 0.4rem;
+  border-radius: 2rem;
+  width: 50%;
+}
+.games {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 2.2rem;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.315)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0;
+  padding: 0.7rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+}
+.progress {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 15%;
+  border-radius: 1rem;
+  position: relative;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(236, 236, 236);
+  position: absolute;
+  left: 60%;
 }
